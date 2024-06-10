@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<link rel="stylesheet" href="./styles/main.css">
+<script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div id="title-bar">
+        GLOBAL HEALTH METRICS DASHBOARD
+    </div>
+    <div class="dashboard">
+        <div id="container1">
+            <div id="world-map"></div>
+        </div>
+        <div id="container2">
+            <div id="inner-container1" class="inner-container">
+                <svg viewbox="0 0 100 100">
+                    <!-- Semi-circle arc -->
+                    <path class="indicator-arc" fill="none" stroke="#00abe7" stroke-width="7" 
+                          transform="rotate(-90 50 50)" />
+                
+                    <!-- Value Indicator Text -->
+                    <text class="indicator-text" x="50" y="90" text-anchor="middle" dy=".3em" fill="#fff"></text>
+                    <text class="indicator-title" x="50" y="70" text-anchor="middle" dy=".3em" fill="#fff">HAQ INDEX 1990</text>
+                    <line class="indicator-needle" x1="50" y1="50" x2="50" y2="5" stroke="black" stroke-width="2" transform="rotate(-90 50 50)" />
+                </svg>
+            </div>
+            <div id="inner-container2" class="inner-container">
+                <svg viewbox="0 0 100 100">
+                    <!-- Semi-circle arc -->
+                    <path class="indicator-arc" fill="none" stroke="#00abe7" stroke-width="7" 
+                          transform="rotate(-90 50 50)" />
+                
+                    <!-- Value Indicator Text -->
+                    <text class="indicator-text" x="50" y="90" text-anchor="middle" dy=".3em" fill="#fff"></text>
+                    <text class="indicator-title" x="50" y="70" text-anchor="middle" dy=".3em" fill="#fff">HAQ INDEX 2019</text>
+                    <line class="indicator-needle" x1="50" y1="50" x2="50" y2="5" stroke="black" stroke-width="2" transform="rotate(-90 50 50)" />
+                </svg>
+            </div>
+        </div>
+        <div id="container4" class="pie-chart-container"></div>
+        <div id="container5"></div>
+        <div id="container6"></div>
+
+    </div>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
